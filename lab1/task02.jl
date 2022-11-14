@@ -1,4 +1,5 @@
 function main_while()
+    println("Введите номер цифры ряда.")
     target_digit = parse(Int32, readline())
     cur_digit = 1
     n = 1
@@ -15,6 +16,7 @@ function main_while()
 end
 
 function main_for()
+    println("Введите номер цифры ряда.")
     target_digit = parse(Int32, readline())
     n = 1
     cur_deg = 2 ^ n
