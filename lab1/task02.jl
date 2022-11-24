@@ -44,7 +44,14 @@ function digit_count(number)
 end
 
 function get_digit(number, idx)
-    # todo get rid of string
+    cur = digit_count(number)
+    while number > 0
+        if cur == idx
+            return number % 10 
+        end
+        number = div(number, 10)
+        cur -= 1
+    end
     return parse(Int32, string(number)[idx])
 end
 
