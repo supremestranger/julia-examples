@@ -52,7 +52,6 @@ function get_digit(number, idx)
         number = div(number, 10)
         cur -= 1
     end
-    return parse(Int32, string(number)[idx])
 end
 
 main_for()
