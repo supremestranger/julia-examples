@@ -1,4 +1,5 @@
 function main()
+    println("Введите строку.")
     data = split(readline())
     a = ['M', 'N', 'K']
     res = ""
